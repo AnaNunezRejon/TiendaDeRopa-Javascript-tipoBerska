@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Carga de fuentes -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+   <link href="fonts/fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet" />
+
+   <!-- Carga de estilos -->
+   <link rel="stylesheet" href="css/login.css">
+   <link rel="stylesheet" href="css/modal.css">
+
+
+   <title>DeliciaDesign</title>
+</head>
+
+<body>
+
+   <div class="login">
+      <img src="./img/login-bg.png" alt="login image" class="login__img">
+
+      <div class="navbar__logo-iniciosesion">
+         <h1 class="logo-iniciosesion"><a href="index.html" class="logo-iniciosesion1">DeliciaDesign</a></h1>
+      </div>
+      <div class="caja__formulario">
+         <form action="" class="login__form" autocomplete="off">
+            <h1 class="login__title">Regístrate</h1>
+
+            <div class="login__content">
+               <div class="login__box-name">
+                  <i class="fa-regular fa-user"></i>
+
+                  <div class="login__box-inputname">
+                     <input type="text" required class="login__input" id="login__name" placeholder=" ">
+                     <label for="login-name" class="login__label">Nombre</label>
+                  </div>
+
+               </div>
+               <div class="login__box">
+                  <i class="fa-regular fa-envelope"></i>
+
+                  <div class="login__box-input">
+                     <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                     <label for="login-email" class="login__label">Email</label>
+                  </div>
+
+               </div>
+
+               <div class="login__box">
+                  <i class="fa-solid fa-lock"></i>
+
+                  <div class="login__box-input">
+                     <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                     <label for="login-pass" class="login__label">Contraseña</label>
+                     <i class="login__eye fa-regular fa-eye" id="login-eye"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-group">
+                  <input type="checkbox" class="login__check-input" id="login-check">
+                  <label for="login-check" class="login__check-label">Recuérdame</label>
+               </div>
+            </div>
+
+            <div class="boton__iniciarsesion">
+               <input type="submit" class="form__button" value="Regístrate">
+            </div>
+            <p class="login__register-inicio">
+               ¿Ya tienes una cuenta? <a href="./login.html" class="login__login-inicio">Inicia sesión</a>
+            </p>
+         </form>
+      </div>
+   </div>
+
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+         <span class="close">&times;</span>
+         <p id="modal-message" class="modal-message">Bienvenido</p>
+      </div>
+   </div>
+
+   <script src="js/login.js"></script>
+</body>
+
+</html>

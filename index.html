@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliciaDesign</title>
+
+    <!-- Carga de fuentes -->
+    <link href="fonts/fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet" />
+    <link href="fonts/montserrat/montserrat.css" rel="stylesheet" />
+
+    <!-- Carga de estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css" id="darkModeLink">
+
+    <script>
+        function mostrarAlerta() {
+            alert("¡Bienvenido a DeliciaDesign! Solo funciona el apartado sudaderas, el carrito, el buscador, el login y el modo oscuro");
+        }
+    </script>
+</head>
+<body onload="mostrarAlerta();">
+
+    <section class="layout__menu">
+        <header class="menu__navbar">
+            <!--logo-->
+            <div class="navbar__logo">
+                <h1 class="logo"><a href="index.html">DeliciaDesign</a></h1>
+            </div>
+
+            <!--Navegacion-->
+            
+            <nav id="nav" class="navbar__nav">   
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="sudaderas.html" class="nav__title">Sudaderas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Camisetas</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Pantalones</a>
+                    </li>
+                   
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Accesorios</a>
+                    </li>
+                    <form id="searchForm" class="navbar__search">
+                        <input type="text" id="searchInput" class="search__input" placeholder="Buscar">
+                        <div class="navbar__btn-search">
+                            <a href="#" class="navbar__button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </form>
+
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html"><i class="bi bi-bag"></i><div id="carritoContador">0</div></a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./registro.html"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+                
+             </nav>
+        </header>
+    </section>
+
+    <div class="wrapper">
+
+        <label for="toggle" id="label__toggle" class="label__toggle"><i class="fa-solid fa-moon"></i></label>
+        <input type="checkbox" id="toggle" class="toggle">
+        
+        <section class="slider">
+            <div class="banner__slider">
+                <img src="img/banner1.jpg" class="banner__img" alt="imagen sudadera morrigan">
+                <img src="img/banner2.jpg" class="banner__img" alt="imagen sudadera morrigan">
+                <img src="img/banner3.jpg" class="banner__img" alt="imagen sudadera morrigan">
+            </div>
+        </section>
+        <section class="contenedor__productos">
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="sudaderas.html" class="imagen__enlace"><img src="img/sudadera1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="sudaderas.html" class="titulo__enlace">Sudaderas</a>
+                </div>
+            </div>
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="#" class="imagen__enlace"><img src="img/camiseta1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="#" class="titulo__enlace">Camisetas</a>
+                </div>
+            </div>
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="#" class="imagen__enlace"><img src="img/pantalones1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="#" class="titulo__enlace">Pantalones</a>
+                </div>
+            </div>
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="#" class="imagen__enlace"><img src="img/zapatillas1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="#" class="titulo__enlace">Zapatillas</a>
+                </div>
+            </div>
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="#" class="imagen__enlace"><img src="img/accesorios11.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="#" class="titulo__enlace">Accesorios</a>
+                </div>
+            </div>
+            <div class="contenedor__productoTitulo">
+                <div class="producto">
+                    <a href="#" class="imagen__enlace"><img src="img/pijama1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a>
+                </div>
+                <div class="titulo">
+                    <a href="#" class="titulo__enlace">Pijamas</a>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor__inspirate">
+            <h2 class="inspirate__titulo">
+                Inspírate
+            </h2>
+            <div class="contenido__inspirate">
+                <div class="inspirate__imagen"><img src=""><a href="#" class="imagen__enlace"><img src="img/sudadera_inspirate2.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a></div>
+                <div class="inspirate__imagen"><a href="#" class="imagen__enlace"><img src="img/camiseta2.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a></div>
+                <div class="inspirate__imagen"><a href="#" class="imagen__enlace"><img src="img/sudadera_inspirate1.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a></div>
+                <div class="inspirate__imagen"><a href="#" class="imagen__enlace"><img src="img/camiseta3.jpg" class="carrusel__img" alt="imagen sudadera morrigan"></a></div>
+            </div>
+
+        </section>
+
+        <section class="contenedor__descuento">
+            <h3 class="descuento__titulo">
+                Consigue un 10% de descuento
+            </h3>
+            <p>Suscríbete a nuestra newsletter y tendrás un 10% de descuento en tu próxima compra, acceso a promociones exclusivas y ¡mucho más!</p>
+            <div class="login__container">
+                <form class="login__form">
+                    <div class="form__container-username">
+                        <label for="username" class="form__label-index">Introduce tu email</label>
+                        <input type="text" name="username" id="username" class="form__input">
+                        <div class="contenedor__boton">
+                            <button class="form-element"  type="submit" >Enviar</button>
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+        <div class="barra"></div>
+        <section class="contenedor__ayuda">
+            <div>
+                <h3>Ayuda</h3>
+                <p> Comprar Online<br>
+                    Pago<br>
+                    Envío<br>
+                    Devoluciones<br>
+                    Tarjeta Regalo<br>
+                    Ticket regalo<br>
+                    Compra como invitado<br>
+                    Ticket electrónico<br>
+                    Solicitar factura<br>
+            </div>
+            <div>
+                <h3>¿Necesitas ayuda?</h3>
+                <a href="#" class="Whatsapp">Whatsapp</a>
+                <p>Llamar 900 000 000<br>
+                De lunes a viernes de 09:00 a 19:00</p>
+            </div>
+            
+            <div>
+                <ul class="social__list">
+    
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <div class="social__icon">
+                                <i class="fa-brands fa-instagram"></i>
+                                
+                            </div>
+                            <div class="social__followes">
+                                <h4 class="social__number">2324234</h4>
+                                <span class="social__word">Seguidores</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <div class="social__icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social__followes">
+                                <h4 class="social__number">2324234</h4>
+                                <span class="social__word">Seguidores</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <div class="social__icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social__followes">
+                                <h4 class="social__number">2324234</h4>
+                                <span class="social__word">Seguidores</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+        </section>
+    </div>
+
+    <footer>
+        <p class="texto-footer">&copy;DeliciaDesign2023</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/dark.js" defer></script>
+    <script src="js/404.js"></script>
+
+</body>
+</html>

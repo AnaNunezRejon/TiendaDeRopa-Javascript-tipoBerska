@@ -1,0 +1,53 @@
+:root{
+    --color-principal: #fff;
+    --color-rosa: #f7326d;
+    --color-morado: #3d0968;
+    --color-rosa-clarito: #ffabc4;
+    
+
+
+}
+.logo{
+    color: var(--color-principala);
+}
+body{
+    background-color: var(--color-morado);
+}
+.logo{
+    color: #fff;
+}
+.nav__title{
+    color: #fff;
+}
+.nav__title:hover{
+    color: var(--color-rosa-clarito);
+}
+.search__input{
+    background-color: transparent;
+}
+.navbar__search{
+    color: #fff;
+}
+::placeholder { color: var(--color-principal); }
+.boton-carrito{
+    color: #fff;
+}
+.titulo__enlace{
+    color: #fff;
+}
+.inspirate__titulo{
+    color: #fff;
+}
+.contenedor__descuento{
+    color: #fff;
+}
+.contenedor__ayuda{
+    color: #fff;
+}
+.social__link{
+    color: #fff;
+}
+.form-element:hover{
+    background: #fff;
+    color: var(--color-morado);
+}

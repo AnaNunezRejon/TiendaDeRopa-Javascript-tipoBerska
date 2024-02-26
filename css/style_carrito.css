@@ -1,0 +1,208 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+p a{
+    display: inline;
+}
+
+img, video, iframe, picture, figure{
+    max-width: 100%;
+    display: block;
+}
+form, input, select, textarea, button, label{
+    font-family: inherit; /* que lo herede del padre*/
+    font-size: inherit;
+    display: block;
+    color: inherit;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+:root {
+    --color-principal: #fff;
+    --color-rosa: #f7326d;
+    --color-morado: #680963;
+    --rosa-clarito:rgb(255, 230, 240);
+    --morado-clarito:rgb(232, 193, 255);
+}
+.wrapper{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10%;
+}
+.wrapper__carrito{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 10rem;
+}
+.mensajeCarritoVacio{
+    padding-top: 6rem;
+    text-align: center;
+    color: var(--color-rosa);
+}
+.contenedor__carrito{
+    display: block;
+    flex-direction: column;
+    border: 1px solid var(--rosa-clarito);
+    width: 50%;
+    padding: 1.5rem;
+    padding-left: 5rem;
+}
+.carrito__cabecera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rosa-clarito);
+    text-align: center;
+}
+.cabecera__titulos{
+    align-items: center;
+}
+.cabecera__cantidad{
+    align-items: center;
+}
+.carrito__productos{
+    display: block;
+    border-bottom: 1px solid var(--rosa-clarito);
+    text-align: center;
+}
+.productos__producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 0;
+}
+.producto__referencia{
+    font-size: x-small;
+}
+.producto__botones{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.cantidad{
+    text-align: center;
+    color: var(--color-rosa);
+    border: 1px solid var(--color-rosa);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    height: 40px;
+    width: 20%;
+    min-width: 2rem;
+}
+.boton__restar,
+.boton__sumar{
+    background-color: var(--color-rosa);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+.boton__restar:hover,
+.boton__sumar:hover{
+    background-color: var(--color-morado);
+    color: white;
+}
+.contenedor__boton{
+    display: flex;
+    justify-content: center;
+}
+.boton__eliminar{
+    background-color: var(--rosa-clarito);
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 15rem;
+}
+.boton__eliminar:hover{
+    background-color: var(--morado-clarito);
+}
+
+/*ASIDE*/
+.contenedor__asideytramitarpedido{
+    display: block;
+}
+
+.contenedor__aside{
+    display: block;
+    background-color: var(--rosa-clarito);
+    padding: 2rem;
+}
+.aside__titulo{
+    padding-bottom: 2rem;
+}
+.aside__contenido{
+    display: inline-block;
+    padding-bottom: 1rem;
+    width: 250px;
+    justify-content: space-between;
+}
+.aside__producto-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total__total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    gap: 2rem;
+    border-top: 1px solid var(--color-rosa);
+}
+.total__precio{
+    font-size: larger;
+}
+.contenedor__tramitarpedido{
+    padding-top: 2rem;
+}
+.boton__tramitarpedido{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-rosa);
+    color: var(--color-principal);
+    cursor: pointer;
+  }
+  .boton__tramitarpedido:hover{
+    background-color: var(--color-morado);
+    color: var(--color-principal);
+  }

@@ -1,0 +1,159 @@
+[
+    {
+        "id": "sudadera1",
+        "titulo": "Sudadera Morrigan",
+        "imagen": "./img/sudadera1.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera2",
+        "titulo": "Sudadera Cyberpunk",
+        "imagen": "./img/sudadera2.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera3",
+        "titulo": "Sudadera Sailor Moon",
+        "imagen": "./img/sudadera3.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera4",
+        "titulo": "Sudadera Jon Snow",
+        "imagen": "./img/sudadera4.1.1.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera5",
+        "titulo": "Sudadera Evangelion",
+        "imagen": "./img/sudadera5.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera6",
+        "titulo": "Sudadera Evangelion",
+        "imagen": "./img/sudadera6.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera7",
+        "titulo": "Sudadera Anime",
+        "imagen": "./img/sudadera7.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "sudadera8",
+        "titulo": "Sudadera ghost in the shell",
+        "imagen": "./img/sudadera8.jpg",
+        "categoria": {
+            "nombre": "Sudaderas",
+            "id": "sudaderas"
+        },
+        "precio": 29.99
+    },
+
+
+    {
+        "id": "pantalones1",
+        "titulo": "Pantalones 01",
+        "imagen": "./img/pantalones1",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 29.99
+    },
+    {
+        "id": "Camiseta1",
+        "titulo": "Camiseta 01",
+        "imagen": "./img/camiseta1",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camiseta"
+        },
+        "precio": 19.99
+    },
+    {
+        "id": "Camiseta2",
+        "titulo": "Camiseta 02",
+        "imagen": "./img/camiseta2",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camiseta"
+        },
+        "precio": 19.99
+    },
+    {
+        "id": "Camiseta3",
+        "titulo": "Camiseta 03",
+        "imagen": "./img/camiseta3",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "camiseta"
+        },
+        "precio": 19.99
+    },
+
+    {
+        "id": "zapatilla1",
+        "titulo": "Zapatillas 01",
+        "imagen": "./img/zapatillas1",
+        "categoria": {
+            "nombre": "Zapatillas",
+            "id": "zapatillas"
+        },
+        "precio": 59.99
+    },
+
+    {
+        "id": "accesorios",
+        "titulo": "Accesorios 01",
+        "imagen": "./img/accesorios1",
+        "categoria": {
+            "nombre": "accesorios",
+            "id": "accesorios"
+        },
+        "precio": 12.99
+    },
+
+    {
+        "id": "pijama1",
+        "titulo": "Pijama 01",
+        "imagen": "./img/pijama1.jpg",
+        "categoria": {
+            "nombre": "Pijamas",
+            "id": "pijamas"
+        },
+        "precio": 25.99
+    }
+
+]
+

@@ -1,0 +1,347 @@
+:root{
+
+    --color-principal: #fff;
+    --color-rosa: #f7326d;
+    --color-morado: #680963;
+    --rosa-clarito:rgb(255, 230, 240);
+    --morado-clarito:rgb(232, 193, 255);
+
+
+}
+
+html{
+    font-size: 10px
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Monserrat", "Helvetica Neue", sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--color-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+p a{
+    display: inline;
+}
+
+img, video, iframe, picture, figure{
+    max-width: 100%;
+    display: block;
+}
+form, input, select, textarea, button, label{
+    font-family: inherit; /* que lo herede del padre*/
+    font-size: inherit;
+    display: block;
+    color: inherit;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.logo{
+    color: var(--color-rosa);
+}
+.layout__menu{
+    padding: 3rem 10%;
+}
+.menu__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__nav{
+    display: flex;
+}
+.navbar__logo{
+    width: 185px;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item{
+    position: relative;
+    margin: 0 1rem;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+.nav__title{
+    font-size: large;
+    line-height: 6rem;
+    transition: all 300ms ease-in-out;
+}
+.nav__title:hover{
+    color: var(--color-rosa);
+}
+.nav__title:hover::before{ 
+    width: 100%;
+    opacity: 1s;
+}
+.navbar__search{
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+.boton-carrito{
+    display: flex;
+    padding-left: 1rem;
+    gap: 0.5rem;
+}
+.wrapper{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10%;
+    padding-bottom: 10rem;
+}
+.toggle{
+    display: none;
+}
+.label__toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--color-morado);
+    font-size: 3rem;
+    cursor: pointer;
+}
+.dark{
+    background-color: var(--color-morado);
+}
+
+.slider{
+    overflow: hidden;
+}
+.banner__slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 300ms ease-in-out;
+}
+.banner__slider img{ /*esto sirve para que cuando tienes imagenes con diferentes proporciones, se ajusten a un ancho de patalla que tu le indiques*/
+    aspect-ratio: 16/6; /*En este caso, 16/9*/
+    object-fit: cover; /*y que cubra todo el tamaño sin deformarse.*/
+
+}
+.contenedor__productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.contenedor__productoTitulo{
+    display: inline-block;
+    width: 100%;
+}
+.producto{
+    display: flex;
+}
+.imagen__enlace{
+    cursor: pointer;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+}
+.imagen__enlace{
+    max-width: 100%;
+}
+.titulo__enlace{
+    display: flex;
+}
+.inspirate__titulo{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    padding: 10rem 0;
+    
+}
+.contenido__inspirate{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.contenedor__descuento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10rem 0;
+}
+.login__container{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-element{
+    padding: .5em 1em;
+    border-radius: 3rem;
+    background: var(--color-rosa);
+    color: white;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.form-element:hover{
+    background: var(--color-morado);
+}
+.form__input{
+    border: 1px solid var(--color-rosa);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    width: 500px;
+}
+.form__label-index{
+    padding: 1rem 0;
+}
+.contenedor__boton{
+    display: flex;
+    justify-content: center;
+}
+.contenedor__ayuda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 10%;
+}
+.social__list{
+    display: inline;
+    justify-content: space-between;
+}
+.social__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--color-rosa);
+}
+.social__item{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+.social__icon{
+    margin-right: 1.5rem;
+    margin-top: 0.2rem;
+}
+.social__icon > .fa-brands{
+    font-size: 3.6rem;
+}
+.social__number{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.social__word{
+    line-height: 1;
+    font-size: 1.3rem;
+    opacity: 0.75;
+}
+.barra{
+    border-top: 1px solid var(--color-rosa);
+    width: 100%;
+    padding-bottom: 5rem;
+}
+.texto-footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-rosa);
+    color: var(--color-principal);
+    padding: 3rem 0;
+}
+
+/*SUDADERAS*/
+.contenedor__sudaderas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.producto__imagen{
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.contenedor__detalles{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* .producto__titulo{
+    font-size: 2rem;
+    padding-top: 2.5rem;
+} */
+.producto__botonComprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.producto__precio{
+    font-size: x-large;
+}
+.producto__botonComprar{
+    background-color: var(--color-rosa);
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    height: 4rem;
+}
+.producto__botonComprar:hover{
+    background-color: var(--color-morado);
+    color: white;
+
+}
+
+

@@ -1,0 +1,182 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+p a{
+    display: inline;
+}
+
+img, video, iframe, picture, figure{
+    max-width: 100%;
+    display: block;
+}
+form, input, select, textarea, button, label{
+    font-family: inherit; /* que lo herede del padre*/
+    font-size: inherit;
+    display: block;
+    color: inherit;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+:root {
+    --color-principal: #fff;
+    --color-rosa: #f7326d;
+    --color-morado: #680963;
+    --rosa-clarito:rgb(255, 230, 240);
+    --morado-clarito:rgb(232, 193, 255);
+}
+.wrapper__formulario{
+    display: inline-block;
+    width: 100%;
+    padding: 0 20%;
+    padding-top: 5rem
+}
+.content{
+    display: flex;
+}
+.box{
+    width: 70%;
+}
+.titulo__formulario{
+    
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-rosa);
+    margin-bottom: 5rem;
+}
+.form__content{
+    border: 1px solid var(--rosa-clarito);
+    padding: 2rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+.politica_privacidad{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+/*ASIDE*/
+.contenedor__asideytramitarpedido{
+    display: block;
+    width: 30%;
+}
+.contenedor__aside{
+    display: block;
+    background-color: var(--rosa-clarito);
+    padding: 2rem;
+}
+.aside__titulo{
+    padding-bottom: 2rem;
+}
+.aside__contenido{
+    display: inline-block;
+    padding-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.aside__producto-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total__total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    gap: 2rem;
+    border-top: 1px solid var(--color-rosa);
+}
+.total__precio{
+    font-size: larger;
+}
+.contenedor__tramitarpedido{
+    padding-top: 2rem;
+}
+.boton__tramitarpedido{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-rosa);
+    color: var(--color-principal);
+    cursor: pointer;
+  }
+.boton__tramitarpedido:hover{
+    background-color: var(--color-morado);
+    color: var(--color-principal);
+}
+.form_datostarjeta{
+    display: inline-block;
+    border: 1px solid var(--rosa-clarito);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+.fecha_Nseguridad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.form__nombre,
+.form__apellidos,
+.form__email,
+.form_CP,
+.form_direccion,
+.form_provincias,
+.nombreTitular,
+.numeroTarjeta,
+.fechaCaducidad,
+.codigoSeguridad{
+    padding: 5px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--rosa-clarito);
+}
+.texto_tarjeta{
+    font-size: small;
+}
+.form__boton{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
